@@ -1,11 +1,5 @@
 # Created by Danila Khodarev.
 # Option: 20.
-""" С клавиатуры вводится два числа K и N.
-    Квадратная матрица А(N,N), состоящая из     A = | E B |
-    4-х равных по размерам подматриц, B,C,D,E       | D C |
-    заполняется случайным образом целыми числами
-    в интервале [-10,10]. Для отладки использовать
-    не случайное заполнение, а целенаправленное. """
 
 from math import floor, ceil
 import matplotlib.pyplot as plt
@@ -19,7 +13,7 @@ def printMatrix(matrix, matrixName = None, description = None):
     if (description != None):
         print(f'Description: {description}')
     print(matrix)
-    print("=================")
+    print("================")
 
 def createMatrix(n, m, minRandValue, maxRandValue):
     return numpy.random.randint(minRandValue, maxRandValue, size=(n, m))
@@ -55,7 +49,7 @@ try:
         printMatrix(matrixF, "MatrixF", "Non-symmetrical swap C and B.")
 
     detA = numpy.linalg.det(matrixA)
-    print(f"DetA = {detA}")
+    print(f"DetA = {detA}.")
     sumDiagonalElements = numpy.trace(matrixF)
     print(f"Sum of diagonal elements = {sumDiagonalElements}.")
     result = 0
@@ -89,12 +83,3 @@ try:
 
 except:
     print('[EXCEPT] An unknown exception has been encountered!')
-    
-
-
-# fig, ax = plt.subplots()
-# ax.set(xlabel='Номер столбца', ylabel='Значение')
-# ax.grid()
-# for j in range(n):
-#     ax.plot([i for i in range(n)], matrixF[j][::])
-# plt.show()
