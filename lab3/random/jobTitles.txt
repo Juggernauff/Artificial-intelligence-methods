@@ -1,0 +1,10 @@
+.Net developer (C#)
+Back-end developer (C#)
+Unity developer
+Front-end developer
+Mobile developer (Swift)
+Database developer (PgSQL)
+Compiler engineer C/C++ (LLVM)
+1C developer
+System analyst
+Software tester
